@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vendors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Vendor Management</h2>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="purchases.html">Purchases</a>
+</nav>
+
+<input id="vname" placeholder="Vendor Name">
+<input id="vemail" placeholder="Vendor Email">
+<button onclick="addVendor()">Add Vendor</button>
+
+<table>
+    <thead>
+        <tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
+    </thead>
+    <tbody id="vendorTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+<script>loadVendors();</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Purchase Management</h2>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="vendors.html">Vendors</a>
+</nav>
+
+<select id="vendorSelect"></select>
+<input id="product" placeholder="Product Name">
+<input id="amount" type="number" placeholder="Amount">
+<button onclick="addPurchase()">Add Purchase</button>
+
+<table>
+    <thead>
+        <tr><th>ID</th><th>Vendor</th><th>Product</th><th>Amount</th><th>Action</th></tr>
+    </thead>
+    <tbody id="purchaseTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+<script>
+loadVendorDropdown();
+loadPurchases();
+</script>
+</body>
+</html>
